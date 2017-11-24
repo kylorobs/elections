@@ -1,7 +1,7 @@
 /* universal */
 html {
   font-size: 16px;
-  font-family: 'Times New Roman';
+  font-family: 'Noto Sans';
 }
 
 .images-container {
@@ -17,14 +17,35 @@ html {
   display: block;
 }
 
+.button {
+  display: block;
+}
+
+.button-container {
+  padding: 2rem;
+}
+
+.info-container {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* BANNER */
 
 .banner {
   width: 100%;
-  height: 40rem;
-  background-image:url(../images/electionsroom.JPG);
+  height: 45rem;
+  background-image:url(../images/debate.jpg);
   background-size: cover;
+  background-position: bottom;
   overflow:hidden;
+
 }
 
 .hover-container {
@@ -36,6 +57,10 @@ html {
   width: 30%;
 }
 
+#col-gold {
+  width: 37%;
+}
+
 .candidates-section {
   align-items: center;
 }
@@ -43,6 +68,9 @@ html {
 .logo {
   margin: 0.2rem auto;
   width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  bottom: 10rem;
 }
 
 .logo img {
@@ -52,28 +80,157 @@ html {
 
 span.gold {
   float: right;
-  position: relative;
   top: 20rem;
 }
 
+span.crowd {
+
+  z-index: 10;
+  top: 30rem;
+}
+
+span.opponent {
+  z-index: 10;
+  top: 4rem;
+}
+
+
 .hover .button-title {
-  background-color: blue;
+  background-color: white;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 1rem
+}
+
+span.button-title {
+  font-size: 1.3rem;
 }
 
 
 .hover .hover-content {
   position: relative;
-  background-color: red;
-  padding: 2rem;
+  background-color: white;
+  border: 1.8rem solid blue;
+  padding: 3rem;
+  z-index: 20;
+}
+
+.hover-title {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+.hover-button {
+  background-color: maroon;
+  color: white;
+  padding: 0.6rem;
+  border: 5px solid maroon;
+  border-radius: 2rem;
+  display: inline-block;
+
 }
 
 .hover #gold-content {
+top: 10rem;
 right: -50rem;
 transition: right 1s ease-out 100ms;
 }
 
 .hover:hover #gold-content {
 right: 0;
+}
+
+.hover #opponent-content {
+top: -50rem;
+transition: top 1s ease-out 100ms;
+}
+
+.hover:hover #opponent-content {
+top: 0;
+}
+
+.hover #crowd-content {
+top: 15rem;
+left: -50rem;
+transition: left 1s ease-out 100ms;
+}
+
+.hover:hover #crowd-content {
+left: 0;
+}
+
+/* NOMINATIONS */
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 9rem;
+  margin-bottom: 2rem;
+}
+
+.section-header, .nominations {
+  background-color: rgb(133,204,0);
+}
+
+.section-title {
+  margin: 1rem auto;
+}
+
+span.section-title {
+  font-size: 2.8rem;
+  display: block;
+}
+
+.CTA {
+  width: 80%;
+  text-align: center;
+}
+
+span.CTA-text {
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+}
+
+
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-container {
+  padding: 2rem;
+}
+
+
+
+#positions{
+  background-color: rgb(252,20,252);
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.positions-board {
+  width: 25%;
+  border: 1.8rem solid maroon;
+  background-color: white;
+  margin: 4rem;
+}
+
+.positions-board ul li {
+  font-size: 1.2rem;
+  padding: 1rem;
 }

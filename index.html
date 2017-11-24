@@ -2,6 +2,7 @@
   <title>Elections 2018</title>
   <link href="./resources/css/reset.css" type= "text/css" rel="stylesheet">
   <link href="./resources/css/style.css" type= "text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
 </head>
 <body>
 
@@ -10,8 +11,8 @@
       <div class="hover-container">
       <div class="col">
         <div class="hover">
-          <span class="button-title">The Crowd Cheers</span>
-          <div class="hover-content">
+          <span class="button-title crowd">The Crowd Cheers</span>
+          <div class="hover-content" id="crowd-content">
             <span class="hover-title"> The Vote</span>
             <p> Voting is open to all registered students. It can be done on a pc, your mobile, or at your campus voting booth. </p>
             <p> Make sure you have successfully logged into uwsu.com. This is how you will vote. </p>
@@ -22,8 +23,8 @@
 
        <div class="col candidates-section">
           <div class="hover">
-            <span class="button-title"> The Opponents Prepare</span>
-            <div class="hover-content candidates">
+            <span class="button-title opponent"> The Opponents Prepare</span>
+            <div class="hover-content" id="opponent-content">
               <span class="hover-title"> The Candidates </span>
               <p> Candidates nominate themselves to stand for elected positions. After submitting their manifestos, they will begin preparing themslves for facing-off with the other candidates during campaigning week and voting week </p>
               <a class="hover-button"> Nominate yourself</a>
@@ -31,11 +32,11 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col" id="col-gold">
           <div class="hover">
             <span class="button-title gold"> They Go For Gold </span>
             <div class="hover-content" id="gold-content">
-              <span class="hover-title"> The Candidates </span>
+              <span class="hover-title"> Results </span>
               <p> Candidates nominate themselves to stand for elected positions. After submitting their manifestos, they will begin preparing themslves for facing-off with the other candidates during campaigning week and voting week </p>
               <a class="hover-button"> Nominate yourself</a>
             </div>
@@ -50,36 +51,67 @@
 
 <!--NOMINATIONS-->
   <div class="section-header nominatons">
-    <span class="section-title"> Nominations</span>
-    <a class="button"> Nominate Yourself </a>
+      <span class="section-title"> Nominations</span>
   </div>
 
 <!--MORE ON NOMINATIONS-->
-  <div class="info">
-    <span class="info-text"> Most student leaders, like Olympic athletes, aren't born that way. They made a <em>decision</em>. It takes one moment of determination and strength to go beyond yourself, do something truly great during your time at Westminster</span>
-    <span> If you feel you have what it takes to lead students, to create positive, lasting change for fellow students, read about the positions and nominate yourself for one </span>
-    <div class="videos-container">
-      <div class="video-container">
-        <iframe src="#">
-      </div>
-      <div class="video-container">
-        <iframe src="#">
+<div class="info-container">
+  <div class="content">
+    <div class="CTA">
+      <span class="CTA-text"> Most student leaders, like Olympic athletes, aren't born that way. They made a <em>decision</em>. It takes one moment of determination and strength to go beyond yourself, do something truly great during your time at Westminster.<span>
+      <span class="CTA-text"> If you feel you have what it takes to lead students, to create positive, lasting change for fellow students, read about the positions and nominate yourself for one </span>
+      <div class="button-container">
+      <a class="hover-button"> Nominate Yourself </a>
       </div>
     </div>
-  </div>
+    <div class="videos-container">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XmknSe5Qyic" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EZgGnt96Vo4" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+</div>
+</div>
 
 
 
   <!--THE POSITIONS-->
-  <div class="section-header positions">
+  <div class="section-header" id="positions">
     <span class="section-title"> Positions</span>
+  </div>
+
+  <div class="all-positions flex">
+    <div class="positions-board">
+      <span class="hover-title"> Full Time </span>
+      <ul>
+        <li> UWSU President </li>
+        <li> Vice-President Cavendish </li>
+        <li> Vice-President Marylebone </li>
+        <li> Vice-President Harrow </li>
+        <li> Vice-President Regents </li>
+      </ul>
+    </div>
+    <div class="positions-board">
+      <span class="hover-title"> Part Time</span>
+      <ul>
+        <li> BAME Officer </li>
+        <li> Disability Officer</li>
+        <li> International Officer </li>
+        <li> LGBTI Officer</li>
+        <li> Women's Officer </li>
+        <li> 4x NUS Delegates </li>
+      </ul>
+    </div>
   </div>
 
 
 <!--SABBS AND LIBERATION OFFICERS-->
+  <div class="section-header nominatons">
+      <span class="section-title"> The Vote</span>
+  </div>
 
-
-<!--MORE ON THE POSITIONS-->
 
 <!--THE VOTE-->
 
