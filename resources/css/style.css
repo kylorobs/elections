@@ -48,6 +48,15 @@ html {
 
 }
 
+.torch-container {
+  width: 8%;
+  height: auto;
+}
+
+.torch-container img {
+  display: block;
+  max-width: 100%;
+}
 .hover-container {
   display: flex;
   justify-content: space-between;
@@ -172,10 +181,14 @@ left: 0;
   align-items: center;
   min-height: 9rem;
   margin-bottom: 2rem;
+  background-image: url(../images/trackbw.jpg);
+  background-size:cover;
+  position: relative;
+
 }
 
 .section-header, .nominations {
-  background-color: rgb(133,204,0);
+  background-color: rgba(133,204,0, 0.7);
 }
 
 .section-title {
@@ -190,10 +203,11 @@ span.section-title {
 .CTA {
   width: 80%;
   text-align: center;
+  margin: auto;
 }
 
 span.CTA-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   display: block;
   padding: 1rem;
@@ -213,8 +227,17 @@ span.CTA-text {
 
 
 #positions{
-  background-color: rgb(252,20,252);
+  background-color: rgba(252,20,252, 0.5);
   width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.all-positions {
+  background-image: url(../images/debate1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 .flex {
@@ -223,14 +246,114 @@ span.CTA-text {
   justify-content: center;
 }
 
+
 .positions-board {
   width: 25%;
   border: 1.8rem solid maroon;
   background-color: white;
   margin: 4rem;
+  position: relative;
+  height: 30rem
 }
 
 .positions-board ul li {
   font-size: 1.2rem;
   padding: 1rem;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.positions-titles, .hover-positions {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hover-positions {
+  background-color: blue;
+  color: white;
+  opacity:0;
+  height: 100%;
+  padding: 0.5rem 1rem 0 1rem;
+  margin: 0;
+  overflow: auto;
+}
+
+.hover-positions:hover {
+opacity: 1;
+}
+
+
+
+/*Documents */
+
+@charset "UTF-8";
+.rep-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.rep-container .col {
+  padding-right: 0px;
+}
+.rep-container .col a::before {
+  font-family: FontAwesome;
+  margin-right: 15px;
+font-weight: 100;
+}
+.rep-container .col a.pie::before {
+  content: "\f200";
+}
+.rep-container .col a.book::before {
+  content: "\f02d";
+}
+.rep-container .col a.pres::before {
+  content: "\f0c0";
+}
+.rep-container .col a.pdf::before {
+  content: "\f1c1";
+}
+.rep-container .col a.grey {
+background-color: #505050
+}
+.rep-container .col a {
+  display: block;
+  color: #fafafa;
+  text-decoration: none;
+  margin: 20px 0px;
+  font-size: 1 em;
+  font-family: Century Gothic, sans serif;
+  background-color: #9E2035;
+  padding: 15px;
+  text-align: center;
+  border-radius: 2px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.rep-container .col a:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+@media screen and (min-width: 1000px) {
+  .rep-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .rep-container .col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+padding-right: 20px;
+  }
