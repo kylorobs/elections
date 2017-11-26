@@ -3,6 +3,7 @@
   <link href="./resources/css/reset.css" type= "text/css" rel="stylesheet">
   <link href="./resources/css/style.css" type= "text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
 </head>
 <body>
 
@@ -11,11 +12,14 @@
       <div class="hover-container">
       <div class="col">
         <div class="hover">
-          <div class="button-title">
+          <div class="button-title crowd">
           <div class="torch-container">
             <img src="./resources/images/torch.gif">
           </div>
-          <span class="crowd">The Crowd Cheers</span>
+          <div class="torch-container">
+            <img src="./resources/images/torch.gif">
+          </div>
+          <span class="button-text">The Crowd</span>
         </div>
           <div class="hover-content" id="crowd-content">
             <span class="hover-title"> The Vote</span>
@@ -28,7 +32,12 @@
 
        <div class="col candidates-section">
           <div class="hover">
-            <span class="button-title opponent"> The Opponents Prepare</span>
+            <div class="button-title opponent">
+            <div class="torch-container">
+              <img src="./resources/images/torch.gif">
+            </div>
+            <span class="button-text"> The Opponents</span>
+          </div>
             <div class="hover-content" id="opponent-content">
               <span class="hover-title"> The Candidates </span>
               <p> Candidates nominate themselves to stand for elected positions. After submitting their manifestos, they will begin preparing themslves for facing-off with the other candidates during campaigning week and voting week </p>
@@ -39,7 +48,18 @@
 
         <div class="col" id="col-gold">
           <div class="hover">
-            <span class="button-title gold"> They Go For Gold </span>
+            <div class="button-title gold">
+              <div class="torch-container">
+                <img src="./resources/images/torch.gif">
+              </div>
+                <div class="torch-container">
+                <img src="./resources/images/torch.gif">
+              </div>
+                <div class="torch-container">
+                <img src="./resources/images/torch.gif">
+              </div>
+            <span class="button-text"> Going for Gold </span>
+          </div>
             <div class="hover-content" id="gold-content">
               <span class="hover-title"> Results </span>
               <p> Candidates nominate themselves to stand for elected positions. After submitting their manifestos, they will begin preparing themslves for facing-off with the other candidates during campaigning week and voting week </p>
@@ -55,8 +75,10 @@
   </div>
 
 <!--NOMINATIONS-->
-  <div class="section-header nominatons">
-      <span class="section-title"> Nominations</span>
+  <div class="section-header">
+    <div class= "nominations flex full">
+      <span class="section-title"> NOMINATIONS</span>
+    </div>
   </div>
 
 <!--MORE ON NOMINATIONS-->
@@ -84,7 +106,7 @@
 
   <!--THE POSITIONS-->
   <div class="section-header">
-    <div  class="flex" id="positions">
+    <div class= "positions flex full">
       <span class="section-title"> Positions</span>
   </div>
 </div>
@@ -112,6 +134,9 @@
         </div>
         <div class="hover-positions">
           <span class="positions-info"> These five full-time officers set the direction of the Students' Union. We support one sabbatical officer for each campus, along with a president, who represents all students across all campuses. These are paid positions, enabling you to support a London life-style whilst maintaining your role. </span>
+          <div class="button-container flex">
+            <a class="hover-button"> Go to the current officers </a>
+          </div>
         </div>
     </div>
 
@@ -129,21 +154,28 @@
       </div>
       <div class="hover-positions">
         <p class="positions-info">These volunteer officers support the full-time officers and look after the interests of particular groups, such as LGBT, international and disabled students. </p>
-        <p class="positions-info"> NUS delegates represent Westminster at the annual National Union of Students' annual conference.</p>
-        <p class="positions-info">The Annual NUS National Conference is the sovereign policy-making body of NUS and brings together nearly a thousand delegates from students' unions across the country to discuss, debate and vote on motions and elect the political leadership of the organisation for the year ahead.</p>
+        <p class="positions-info"> NUS delegates represent Westminster at the annual National Union of Students' annual conference,bringing  together nearly a thousand delegates from students' unions to debate and vote on motions and elect NUS political leadership </p>
+        <div class="button-container flex">
+          <a class="hover-button"> Go to the current officers </a>
         </div>
+            </div>
+          </div>
         </div>
-      </div>
+    <div class="button-container flex">
+      <a class="hover-button"> Go to the current officers </a>
+    </div>
+</div>
   </div>
-  <a class="hover-button"> Read more about these positions and current representatives </a>
 </div>
 </div>
 
 
 
 <!--THE VOTE-->
-  <div class="section-header nominatons">
+  <div class="section-header">
+    <div class= "vote flex full">
       <span class="section-title"> The Vote</span>
+    </div>
   </div>
 
   <div class="info-container">
@@ -156,8 +188,10 @@
 
 <!--THE DOCUMENTS-->
 
-<div class="section-header" id="documents">
+<div class="section-header">
+  <div class= "documents flex full">
     <span class="section-title"> Elections Guide and Documents</span>
+  </div>  
 </div>
 
 <!--THE DOCUMENT LINKS-->
