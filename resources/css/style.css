@@ -102,6 +102,33 @@ html {
   display: block;
 }
 
+.text {
+  position: relative;
+bottom: 5rem;
+text-align: center;
+font-family: Cinzel Decorative;
+font-weight:700;
+font-size: 1.2rem;
+}
+
+.arrow {
+position: relative;
+bottom: 8rem;
+text-align: center;
+margin: auto;
+}
+
+.arrow-container {
+  width:7%;
+  margin:auto;
+  display: inline;
+}
+
+.arrow-container img {
+  display: inline;
+  height: 4rem;
+  transform: rotate(135deg);
+}
 .gold {
   z-index: 10;
   top: 30rem;
@@ -248,7 +275,6 @@ span.CTA-text {
   background-image: url(../images/debate1bw.jpg);
   background-size: cover;
   background-attachment: fixed;
-  padding-bottom: 4rem;
 
 }
 
@@ -301,6 +327,7 @@ opacity: 1;
 .button-container {
   width: 100%;
 }
+
 
 
 /*vote */
