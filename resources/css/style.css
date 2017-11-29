@@ -421,7 +421,7 @@ padding-right: 20px;
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .banner {
     width: 100%;
   }
