@@ -396,6 +396,11 @@ background-color: #505050
           filter: brightness(1.1);
 }
 
+
+/*Media Queries */
+
+
+
 @media screen and (min-width: 1000px) {
   .rep-container {
     display: -webkit-box;
@@ -412,3 +417,17 @@ background-color: #505050
             flex: 1;
 padding-right: 20px;
   }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  .banner {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+    margin: auto;
+  }
+}
