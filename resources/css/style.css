@@ -430,4 +430,46 @@ padding-right: 20px;
     width: 100%;
     margin: auto;
   }
+
+  .hover-content, .hover-positions {
+    display: none;
+  }
+
+  .positions-board {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .videos-container {
+    flex-wrap: wrap;
+  }
+
+  span.section-title {
+    font-size: 2.8rem;
+  }
+
+  .hover .button-title {
+    position: absolute;
+  }
+
+  .opponent {
+    top: 90%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .crowd {
+    top: 70%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .gold {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
 }
