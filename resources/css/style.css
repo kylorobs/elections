@@ -344,6 +344,12 @@ opacity: 1;
   position: absolute;
 }
 
+.electionguide {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
 @charset "UTF-8";
 .rep-container {
   display: -webkit-box;
@@ -395,6 +401,25 @@ background-color: #505050
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
 }
+
+/*Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-logo {
+  width: 20%;
+  height: auto;
+}
+
+.bottom-logo img{
+  width: 100%;
+  display: block;
+
+}
+
 
 
 /*Media Queries */
