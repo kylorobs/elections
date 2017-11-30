@@ -97,6 +97,10 @@ html {
   bottom: 32rem;
 }
 
+.logo:hover {
+  filter:brightness(150%);
+}
+
 .logo img {
   width: 100%;
   display: block;
@@ -192,7 +196,14 @@ span.button-text {
   border: 5px solid maroon;
   border-radius: 2rem;
   display: inline-block;
+}
 
+.hover-button:hover {
+  filter:brightness(150%);
+}
+
+a.hover-button {
+  text-decoration: none;
 }
 
 .hover #gold-content {
@@ -330,12 +341,21 @@ opacity: 1;
 }
 
 
-
 /*vote */
 
 .vote {
   background-color: rgba(0, 69, 125, 0.8);
   position: absolute;
+}
+
+.iframe-content {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.iframe-content iframe {
+  width: 100%;
 }
 
 /*Documents */
@@ -424,54 +444,64 @@ background-color: #505050
 
 /*Media Queries */
 
-
-
-@media screen and (min-width: 1000px) {
-  .rep-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .rep-container .col {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-padding-right: 20px;
-  }
+@media screen and (min-width: 1024px) {
+.mobile-position {
+  display: none;
 }
 
+.mobile-link {
+  display: none;
+}
+}
 
-
-@media screen and (max-width: 550px) {
-  .banner {
-    width: 100%;
-    min-height: 60rem;
-  }
-
-  body {
-    width: 100%;
-    margin: auto;
-  }
+@media screen and (max-width: 1024px) {
 
   .hover-content, .hover-positions {
     display: none;
   }
+  .positions-board {
+    height: 40rem;
+    width: 30%;
+  }
+
+  .iframe-content {
+    display: none;
+  }
+
+  .CTA {
+    width: 90%;
+  }
+
+  .bottom-logo {
+    width: 30%
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .desktop-link {
+    display: none;
+  }
+
+  .button-title a{
+    color: white;
+    text-decoration: none;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
 
   .positions-board {
-    width: 100%;
+    width: 50%;
     margin: 1rem;
+    height: 37rem;
   }
 
   .videos-container {
     flex-wrap: wrap;
-  }
-
-  span.section-title {
-    font-size: 2.8rem;
   }
 
   .hover .button-title {
@@ -502,4 +532,61 @@ padding-right: 20px;
   .positions-titles, .hover-positions {
     position: static;
   }
+
+  span.CTA-text {
+    width:100%;
+    padding: 0;
+  }
+
+
+  .logo img {
+    width: 140%;
+  }
+
+  .bottom-logo {
+    width: 30%
+  }
+
+  .iframe-content {
+    width: 120%;
+  }
+  }
+
+
+@media screen and (max-width: 550px) {
+  .banner {
+    width: 100%;
+    min-height: 60rem;
+  }
+
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+  .hover-content, .hover-positions {
+    display: none;
+  }
+
+  .positions-board {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .videos-container {
+    flex-wrap: wrap;
+  }
+
+  span.section-title {
+    font-size: 2.8rem;
+  }
+
 }
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 60%;}
+  .CTA {
+    width: 95%;
+  }
+  }
