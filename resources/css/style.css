@@ -315,12 +315,15 @@ ul {
   list-style-type: none;
 }
 
+.positions-titles {
+  width: 100%;
+}
+
 .positions-titles, .hover-positions {
   position: absolute;
   top: 0;
   left: 0;
   flex-direction: column;
-  width:100%;
 }
 
 .hover-positions {
@@ -331,6 +334,7 @@ ul {
   padding: 0.5rem 1rem 0 1rem;
   margin: 0;
   overflow: auto;
+  width: 90%;
 }
 
 .hover-positions:hover {
@@ -445,6 +449,25 @@ background-color: #505050
 
 /*Media Queries */
 
+@media screen and (min-width: 1650px) {
+  .iframe-content iframe {
+    height: 70%;
+  }
+
+  .hover #crowd-content {
+    top: 7rem;
+  }
+
+  .hover #gold-content {
+    top: 7rem;
+  }
+
+  .logo {
+    bottom: 45rem;
+  }
+
+}
+
 @media screen and (min-width: 1024px) {
 .mobile-position {
   display: none;
@@ -453,6 +476,12 @@ background-color: #505050
 .mobile-link {
   display: none;
 }
+
+span.positions-info {
+  margin: 1rem;
+}
+
+
 }
 
 @media screen and (max-width: 1024px) {
