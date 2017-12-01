@@ -320,6 +320,7 @@ ul {
   top: 0;
   left: 0;
   flex-direction: column;
+  width:100%;
 }
 
 .hover-positions {
@@ -550,6 +551,10 @@ background-color: #505050
   .iframe-content {
     width: 120%;
   }
+
+  .sab-video {
+    display: none;
+  }
   }
 
 
@@ -569,7 +574,7 @@ background-color: #505050
   }
 
   .positions-board {
-    width: 100%;
+    width: 70%;
     margin: 1rem;
   }
 
@@ -581,6 +586,7 @@ background-color: #505050
     font-size: 2.8rem;
   }
 
+
 }
 
 @media screen and (max-width: 480px) {
@@ -589,4 +595,5 @@ background-color: #505050
   .CTA {
     width: 95%;
   }
+
   }
